@@ -6,4 +6,9 @@ def main(a):
     Returns:
         a: a increased by 1 if positive, else unchanged.
     """
-    return
+    if a > 0:
+        a += 1
+
+    return a
+
+print(main(54))
