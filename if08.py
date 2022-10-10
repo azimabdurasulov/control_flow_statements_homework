@@ -11,4 +11,18 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a % 2 == 1 and a >= 10 and a <= 99:
+        print("two-digit odd number")
+
+    if a % 2 == 0 and a >= 10 and a <= 99:
+        print("two-digit even number")
+
+    if a % 2 == 1 and a >= 100 and a <= 999:
+        print("three-digit odd number")
+
+    if a % 2 == 0 and a >= 100 and a <= 999:
+        print("three-digit even number")
+
+    return a
+
+print(main(348))
