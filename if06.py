@@ -18,25 +18,27 @@ def main(a,b,c):
      
     if a > 0:
         count1 += 1
-    else:
+    if a < 0:
         count0 += 1
 
     if b > 0:
         count1 += 1
-    else:
+    if b < 0:
         count0 += 1
 
     if c > 0:
         count1 += 1
-    else:
+    if c < 0:
         count0 += 1
 
-
+    answer = ''
     if count0 < count1:
-        print("there are a lot of positive numbers")
+        answer = "there are a lot of positive numbers"
     else:
-        print("there are a lot of negative numbers")
+        answer = "there are a lot of negative numbers"
 
-    return count0, count1
 
-print(main(32, 4, -76))
+    return answer
+    
+
+print(main(1, 0, 6))
