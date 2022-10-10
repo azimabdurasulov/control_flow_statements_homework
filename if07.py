@@ -13,20 +13,21 @@ def main(a):
         string: the message to print
     """
     if a % 2 == 1 and a > 0:
-        print("positive odd number", a)
+        answer = "positive odd number"
     
     if a % 2 == 0 and a > 0:
-        print("positive even number", a)
+        answer = "positive even number"
 
     if a % 2 == 1 and a < 0:
-        print("negative odd number", a)
+       answer = "negative odd number"
 
     if a % 2 == 0 and a < 0:
-        print("negative even number", a)
+        answer = "negative even number"
 
 
     if a == 0: 
-        print("the number is zero", a)
-    return a
+        answer = "the number is zero"
+        
+    return answer
 
 print(main(44))
