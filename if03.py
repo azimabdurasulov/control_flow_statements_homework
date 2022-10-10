@@ -9,10 +9,10 @@ def main(a):
     if a > 0:
         a += 1
 
-    elif a == 0:
+    if a == 0:
         a += 10
 
-    else:
+    if a < 0:
         a -= 2
 
     return a
