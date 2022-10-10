@@ -21,4 +21,4 @@ def main(a,b,c):
 
     return count0
 
-print(main(43, 45, -65))
+print(main(43, 45, 65))
